@@ -5,6 +5,13 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
-  title = 'SchoolSPA';
+  title = 'School Single Page Application';
+
+  public ArenaClick(category: string) {
+    console.log(category);
+  }
 }
+
+
