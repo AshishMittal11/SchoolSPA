@@ -3,7 +3,8 @@
     "",
     "\\app",
     "\\app\\student",
-    "\\app\\student\\student-dashboard"
+    "\\app\\student\\student-dashboard",
+    "\\environments"
   ],
   "PreviewInSolutionExplorer": false
 }

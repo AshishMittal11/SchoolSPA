@@ -8,7 +8,7 @@ export class Teacher {
   public homePhone: string = "";
   public gender: string = "";
   public currentAddress: string = "";
-  public residentialAdderss: string = "";
-  public createdOn: Date;
-  public modifiedOn: Date;
+  public residentialAddress: string = "";
+  public createdOn: Date = new Date();
+  public modifiedOn: Date = new Date();
 }

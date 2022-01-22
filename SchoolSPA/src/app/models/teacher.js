@@ -12,7 +12,9 @@ var Teacher = /** @class */ (function () {
         this.homePhone = "";
         this.gender = "";
         this.currentAddress = "";
-        this.residentialAdderss = "";
+        this.residentialAddress = "";
+        this.createdOn = new Date();
+        this.modifiedOn = new Date();
     }
     return Teacher;
 }());
