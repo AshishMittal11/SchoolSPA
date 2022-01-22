@@ -7,14 +7,15 @@ var Student = /** @class */ (function () {
         this.firstName = "";
         this.middleName = "";
         this.lastName = "";
+        this.photoBase64 = "";
         this.gender = "";
         this.email = "";
         this.currentAddress = "";
         this.permanentAddress = "";
-        this.dob = new Date();
+        this.dob = "";
         this.isActive = false;
-        this.createdDate = new Date();
-        this.modifiedDate = new Date();
+        this.createdDate = "";
+        this.modifiedDate = "";
     }
     return Student;
 }());

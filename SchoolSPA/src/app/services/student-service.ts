@@ -9,9 +9,13 @@ export class StudentService {
   constructor(private httpClient: HttpClient) { }
 
   public RegisterStudent(student: Student): boolean {
-    let url = environment.schoolPath.student + 'api/student';
+    let payload = JSON.stringify(student);
+    console.log(payload);
+    let url = environment.schoolPath.student + '/api/student/register';
     let status = false;
-    this.httpClient.post(url, student).subscribe(response => {
+
+    this.httpClient.post(url, payload).subscribe(response => {
+      debugger;
       if (response) {
         status = <boolean>response;
       }
@@ -21,7 +25,7 @@ export class StudentService {
   }
 
   public ListStudents(): Student[] {
-    let url = environment.schoolPath.student + 'api/student';
+    let url = environment.schoolPath.student + '/api/student/view';
     let students: Student[] = [];
     this.httpClient.get(url).subscribe(response => {
       if (response) {

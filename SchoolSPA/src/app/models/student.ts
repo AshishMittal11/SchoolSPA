@@ -3,12 +3,13 @@ export class Student {
   public firstName: string = "";
   public middleName: string = "";
   public lastName: string = "";
+  public photoBase64: string = "";
   public gender: string = "";
   public email: string = "";
   public currentAddress: string = "";
   public permanentAddress: string = "";
-  public dob: Date = new Date();
+  public dob: string = "";
   public isActive: boolean = false;
-  public createdDate: Date = new Date();
-  public modifiedDate: Date = new Date();
+  public createdDate: string = "";
+  public modifiedDate: string = "";
 }

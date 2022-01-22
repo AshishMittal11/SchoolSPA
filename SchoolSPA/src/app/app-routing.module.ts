@@ -6,7 +6,7 @@ import { TeacherDashboardComponent } from './teacher/teacher-dashboard/teacher-d
 
 const routes: Routes = [
   { path: 'student/dashboard', component: StudentDashboardComponent },
-  { path: 'students/view', component: StudentViewComponent },
+  { path: 'view/students', component: StudentViewComponent },
   { path: 'teacher/dashboard', component: TeacherDashboardComponent },
 ];
 
