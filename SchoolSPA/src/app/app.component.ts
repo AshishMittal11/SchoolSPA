@@ -15,7 +15,6 @@ export class AppComponent {
   }
 
   public ArenaClick(category: string) {
-    console.log(category);
     if (category === 'student') {
       this.router.navigateByUrl('student/dashboard');
     }
