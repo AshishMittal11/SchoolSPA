@@ -6,9 +6,9 @@ export class Student {
   public gender: string = "";
   public email: string = "";
   public currentAddress: string = "";
-  public permanentAddres: string = "";
-  public dob: Date;
+  public permanentAddress: string = "";
+  public dob: Date = new Date();
   public isActive: boolean = false;
-  public createdDate: Date;
-  public modifiedDate: Date;
+  public createdDate: Date = new Date();
+  public modifiedDate: Date = new Date();
 }

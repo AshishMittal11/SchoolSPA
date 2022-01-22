@@ -10,8 +10,11 @@ var Student = /** @class */ (function () {
         this.gender = "";
         this.email = "";
         this.currentAddress = "";
-        this.permanentAddres = "";
+        this.permanentAddress = "";
+        this.dob = new Date();
         this.isActive = false;
+        this.createdDate = new Date();
+        this.modifiedDate = new Date();
     }
     return Student;
 }());
