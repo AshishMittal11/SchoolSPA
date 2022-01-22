@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\app",
+    "\\app\\student",
+    "\\app\\student\\student-dashboard"
   ],
-  "SelectedNode": "\\environments",
   "PreviewInSolutionExplorer": false
 }

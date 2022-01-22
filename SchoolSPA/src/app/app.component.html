@@ -1,14 +1,12 @@
 <h1 class="header-css">Skilled Public School</h1>
 
 <div class="row">
-  <div class="offset-2 col-md-8 arena-css">
-    <ul>
-      <li class="li-css" (click)="ArenaClick('student')">Enter At Student's Arena !!!</li>
-      <li class="li-css" (click)="ArenaClick('teacher')">Enter At Teacher's Arena !!!</li>
-    </ul>
+  <div class="col-md-6">
+    <span (click)="ArenaClick('student')" class="li-css">Enter At Student's Arena !!!</span>
+  </div>
+  <div class="col-md-6">
+    <span (click)="ArenaClick('teacher')" class="li-css">Enter At Teacher's Arena !!!</span>
   </div>
 </div>
-
 <hr />
-
 <router-outlet></router-outlet>
