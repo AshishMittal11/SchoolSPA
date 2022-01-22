@@ -14,6 +14,11 @@ export class StudentViewComponent implements OnInit {
   constructor(private studentService: StudentService) { }
 
   ngOnInit(): void {
-    this.students = this.studentService.ListStudents();
+    this.studentService.ListStudents()
+      .subscribe(response => {
+        if (response) {
+          this.students = response;
+        }
+      }, err => console.log(err), () => console.log('students fetching completed.'));
   }
 }

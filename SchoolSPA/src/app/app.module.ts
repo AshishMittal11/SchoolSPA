@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,6 +7,8 @@ import { TeacherDashboardComponent } from './teacher/teacher-dashboard/teacher-d
 import { StudentService } from './services/student-service';
 import { HttpClientModule } from '@angular/common/http';
 import { TeacherService } from './services/teacher-service';
+import { CommonModule } from '@angular/common';
+import { BrowserModule } from '@angular/platform-browser';
 
 @NgModule({
   declarations: [
@@ -16,10 +17,11 @@ import { TeacherService } from './services/teacher-service';
     TeacherDashboardComponent,
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [StudentService, TeacherService],
   bootstrap: [AppComponent]

@@ -5,8 +5,8 @@
 export const environment = {
   production: false,
   schoolPath: {
-    student: "http://localhost:5000",
-    teacher: "http://localhost:5001"
+    student: "https://localhost:5000",
+    teacher: "https://localhost:5001"
   }
 };
 

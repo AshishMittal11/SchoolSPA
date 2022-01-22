@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { Student } from './models/student';
+import { StudentService } from './services/student-service';
 
 @Component({
   selector: 'app-root',
@@ -13,6 +15,7 @@ export class AppComponent {
   constructor(private router: Router) { }
 
   public ArenaClick(category: string) {
+
     if (category === 'student') {
       this.router.navigateByUrl('student/dashboard');
     }
