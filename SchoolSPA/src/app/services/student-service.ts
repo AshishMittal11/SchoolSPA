@@ -26,7 +26,7 @@ export class StudentService {
   }
 
   public ListStudents(): Observable<Student[]> {
-    let url = "https://localhost:5000/api/student/view";
+    let url = "http://localhost:5000/api/Student/view";    
     return this.httpClient.get<Student[]>(url);
   }
 }
