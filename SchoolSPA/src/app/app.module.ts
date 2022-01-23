@@ -10,13 +10,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { TeacherService } from './services/teacher-service';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
+import { TeacherviewComponent } from './teacher/teacherview/teacherview.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StudentDashboardComponent,
     TeacherDashboardComponent,
-    StudentViewComponent
+    StudentViewComponent,
+    TeacherviewComponent
   ],
   imports: [    
     BrowserModule,

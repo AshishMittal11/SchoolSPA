@@ -9,24 +9,19 @@ import { Observable } from 'rxjs';
 export class StudentService {
   constructor(private httpClient: HttpClient) { }
 
-  public RegisterStudent(student: Student): boolean {
+  public RegisterStudent(student: Student): Observable<boolean> {
     let payload = JSON.stringify(student);
-    console.log(payload);
     let url = environment.schoolPath.student + '/api/student/register';
-    let status = false;
-
-    this.httpClient.post(url, payload).subscribe(response => {
-      debugger;
-      if (response) {
-        status = <boolean>response;
-      }
-    }, err => console.log(err), () => console.log('student registered successfully.'));
-
-    return status;
+    return this.httpClient.post<boolean>(url, payload, {
+      headers: { 'Content-Type': 'application/json' }
+    });
   }
 
   public ListStudents(): Observable<Student[]> {
-    let url = "http://localhost:5000/api/Student/view";    
-    return this.httpClient.get<Student[]>(url);
+    // let url = "https://localhost:5000/api/Student/view";
+    let url = environment.schoolPath.student + '/api/student/view';
+    return this.httpClient.get<Student[]>(url, {
+      headers: { 'Content-Type': 'application/json' }
+    });
   }
 }

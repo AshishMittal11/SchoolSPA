@@ -1,4 +1,4 @@
-<h3 style="text-align:center; text-decoration: underline;">Student Listing</h3>
+<h3 style="text-align:center; text-decoration: underline;">Teacher Listing</h3>
 
 <table class="table table-stripped">
   <thead>
@@ -9,17 +9,18 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let student of students">
-      <td>{{student.firstName}}</td>
-      <td>{{student.gender}}</td>
-      <td>{{student.email}}</td>
+    <tr *ngFor="let teacher of teachers">
+      <td>{{teacher.firstName}}</td>
+      <td>{{teacher.gender}}</td>
+      <td>{{teacher.email}}</td>
     </tr>
   </tbody>
   <tfoot>
     <tr style="text-align:right">
       <td colspan="3">
-        <b>Total students : </b> {{this.students.length}}
+        <b>Total teachers : </b> {{this.teachers.length}}
       </td>
     </tr>
   </tfoot>
 </table>
+

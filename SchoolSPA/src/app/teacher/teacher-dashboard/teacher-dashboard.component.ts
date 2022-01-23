@@ -14,10 +14,13 @@ export class TeacherDashboardComponent implements OnInit {
   constructor(private teacherService : TeacherService) { }
 
   ngOnInit(): void {
-
+    
   }
 
   public RegisterTeacher(): void {
-    console.log(this.teacher);
+    this.teacherService.TeacherRegister(this.teacher).subscribe(response => console.log(response), err => {
+      console.log('teacher registration error');
+      console.log(err);
+    }, () => console.log('teacher registeration done successfully.'));
   }
 }

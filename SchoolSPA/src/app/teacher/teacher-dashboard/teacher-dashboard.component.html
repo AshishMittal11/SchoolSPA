@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-md-3">
-    <a href="" class="btn btn-success">View all the school Teachers</a>
+    <a href="teacher/view" class="btn btn-success">View all the school Teachers</a>
   </div>
 </div>
 <br />
@@ -39,7 +39,7 @@
     </div>
     <div class="row spacing">
       <div class="col-md-2 highlight">Email</div>
-      <div class="col-md-10">
+      <div class="col-md-4">
         <input type="text" class="form-control" placeholder="enter email" [(ngModel)]="this.teacher.email" />
       </div>
     </div>
@@ -53,6 +53,12 @@
       <div class="col-md-2 highlight">Mobile</div>
       <div class="col-md-2">
         <input type="text" class="form-control" placeholder="enter mobile" [(ngModel)]="this.teacher.mobile" />
+      </div>
+    </div>
+    <div class="row spacing">
+      <div class="col-md-2 highlight">Qualification</div>
+      <div class="col-md-4">
+        <input type="text" class="form-control" placeholder="enter qualification" [(ngModel)]="this.teacher.qualification" />
       </div>
     </div>
     <div class="row spacing">

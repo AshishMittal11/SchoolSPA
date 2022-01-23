@@ -13,8 +13,9 @@ var Teacher = /** @class */ (function () {
         this.gender = "";
         this.currentAddress = "";
         this.residentialAddress = "";
-        this.createdOn = new Date();
-        this.modifiedOn = new Date();
+        this.createdOn = "";
+        this.modifiedOn = "";
+        this.qualification = "";
     }
     return Teacher;
 }());

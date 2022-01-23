@@ -9,6 +9,7 @@ export class Teacher {
   public gender: string = "";
   public currentAddress: string = "";
   public residentialAddress: string = "";
-  public createdOn: Date = new Date();
-  public modifiedOn: Date = new Date();
+  public createdOn: string = "";
+  public modifiedOn: string = "";
+  public qualification: string = "";
 }
