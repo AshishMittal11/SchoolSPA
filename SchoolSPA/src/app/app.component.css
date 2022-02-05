@@ -1,17 +1,12 @@
-.header-css {
+.student-reg-css {
   text-decoration: underline;
   text-align: center;
-  padding-bottom:20px;
 }
 
-.arena-css {
-  padding-top: 80px;
+.highlight {
+  font-weight: bold;
 }
 
-.li-css {
-  font-size: 20px;
-  font-family: Verdana;
-  color: maroon;
-  cursor: pointer;
-  font-style: italic;
+.row-spacing {
+  padding-bottom: 6px;
 }

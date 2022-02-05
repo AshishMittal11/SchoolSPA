@@ -4,11 +4,8 @@
     "\\app",
     "\\app\\models",
     "\\app\\services",
-    "\\app\\student",
-    "\\app\\student\\student-dashboard",
-    "\\app\\student\\student-view",
-    "\\environments"
+    "\\app\\teacher",
+    "\\app\\teacher\\teacher-dashboard"
   ],
-  "SelectedNode": "\\app\\student\\student-dashboard\\student-dashboard.component.ts",
   "PreviewInSolutionExplorer": false
 }
