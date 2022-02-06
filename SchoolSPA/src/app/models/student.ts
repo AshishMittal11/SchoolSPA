@@ -12,4 +12,5 @@ export class Student {
   public isActive: boolean = false;
   public createdDate: string = "";
   public modifiedDate: string = "";
+  public admittedClassId: string = "";
 }

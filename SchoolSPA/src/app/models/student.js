@@ -16,6 +16,7 @@ var Student = /** @class */ (function () {
         this.isActive = false;
         this.createdDate = "";
         this.modifiedDate = "";
+        this.admittedClassId = "";
     }
     return Student;
 }());

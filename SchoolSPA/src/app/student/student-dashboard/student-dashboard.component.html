@@ -60,9 +60,9 @@
     <div class="row spacing">
       <div class="col-md-2 highlight">Class to be admiitted:</div>
       <div class="col-md-1">
-        <select class="form-control">
+        <select class="form-control" [(ngModel)]="this.student.admittedClassId">
           <option value="0" selected="selected">-Select-</option>
-          <option *ngFor="let class of this.classes" value="class.id">{{class.name + '(' + class.sectionName + ')'}}</option>
+          <option *ngFor="let class of this.classes" [value]="class.id">{{class.name + '(' + class.sectionName + ')'}}</option>
         </select>
       </div>
     </div>

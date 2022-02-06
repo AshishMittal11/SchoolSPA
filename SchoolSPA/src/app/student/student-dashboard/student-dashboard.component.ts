@@ -33,6 +33,7 @@ export class StudentDashboardComponent implements OnInit {
     this.student.dob = '11/11/1988';
     this.student.createdDate = '01/22/2022';
     this.student.modifiedDate = '01/22/2022';
+    console.log(this.student);
     this.studentService.RegisterStudent(this.student).subscribe(response => {
       if (response) {
         console.log('student added successfully.');
@@ -41,6 +42,6 @@ export class StudentDashboardComponent implements OnInit {
     }, err => {
       console.log('student registration error');
       console.log(err);
-    }, () => console.log('student registration done successfully.'));
+    }, () => console.log('student registration completed.'));
   }
 }
