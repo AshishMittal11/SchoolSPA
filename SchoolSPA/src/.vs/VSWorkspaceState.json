@@ -1,11 +1,6 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\app",
-    "\\app\\models",
-    "\\app\\services",
-    "\\app\\teacher",
-    "\\app\\teacher\\teacher-dashboard"
+    ""
   ],
   "PreviewInSolutionExplorer": false
 }

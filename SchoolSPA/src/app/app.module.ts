@@ -11,6 +11,8 @@ import { TeacherService } from './services/teacher-service';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { TeacherviewComponent } from './teacher/teacherview/teacherview.component';
+import { LoginComponent } from './login/login.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { TeacherviewComponent } from './teacher/teacherview/teacherview.componen
     StudentDashboardComponent,
     TeacherDashboardComponent,
     StudentViewComponent,
-    TeacherviewComponent
+    TeacherviewComponent,
+    LoginComponent,
+    DashboardComponent
   ],
   imports: [    
     BrowserModule,
