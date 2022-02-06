@@ -3,6 +3,8 @@ import { Router } from '@angular/router';
 import { Student } from '../../models/student';
 import { StudentService } from '../../services/student-service';
 import { DatePipe } from '@angular/common';
+import { ClassService } from '../../services/class-service';
+import { ClassRoom } from '../../models/classRoom';
 
 @Component({
   selector: 'app-student-dashboard',
@@ -12,11 +14,19 @@ import { DatePipe } from '@angular/common';
 export class StudentDashboardComponent implements OnInit {
 
   public student: Student = new Student();
+  public classes: ClassRoom[] = [];
 
-  constructor(private router: Router, private studentService: StudentService) { }
+  constructor(private router: Router, private studentService: StudentService, private classService: ClassService) { }
 
   ngOnInit(): void {
-
+    this.classService.ViewClasses().subscribe(response => {
+      if (response) {
+        this.classes = response;
+      }
+    }, err => {
+      console.log('error during pulling classes');
+      console.log(err)
+    }, () => console.log('classes download completed.'));
   }
 
   public RegisterStudent() {

@@ -8,7 +8,8 @@ exports.environment = {
     production: false,
     schoolPath: {
         student: "https://localhost:5000",
-        teacher: "https://localhost:5001"
+        teacher: "https://localhost:5001",
+        class: "http://localhost:5205"
     }
 };
 /*

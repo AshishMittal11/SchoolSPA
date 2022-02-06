@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\app",
+    "\\app\\models",
+    "\\app\\services"
   ],
+  "SelectedNode": "\\app\\services\\class-service.ts",
   "PreviewInSolutionExplorer": false
 }

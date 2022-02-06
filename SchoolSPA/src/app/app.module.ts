@@ -13,6 +13,7 @@ import { CommonModule } from '@angular/common';
 import { TeacherviewComponent } from './teacher/teacherview/teacherview.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { ClassService } from './services/class-service';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     FormsModule,
     HttpClientModule,
   ],
-  providers: [StudentService, TeacherService],
+  providers: [StudentService, TeacherService, ClassService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

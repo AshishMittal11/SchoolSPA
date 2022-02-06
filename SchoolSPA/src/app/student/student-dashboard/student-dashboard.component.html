@@ -6,25 +6,25 @@
   </div>
   <div class="card-body">
     <div class="row spacing">
-      <div class="col-md-2 highlight">First Name</div>
+      <div class="col-md-2 highlight">First Name:</div>
       <div class="col-md-10">
         <input type="text" class="form-control" placeholder="enter first name" [(ngModel)]="this.student.firstName" />
       </div>
     </div>
     <div class="row spacing">
-      <div class="col-md-2 highlight">Middle Name</div>
+      <div class="col-md-2 highlight">Middle Name:</div>
       <div class="col-md-10">
         <input type="text" class="form-control" placeholder="enter middle name" [(ngModel)]="this.student.middleName" />
       </div>
     </div>
     <div class="row spacing">
-      <div class="col-md-2 highlight">Last Name</div>
+      <div class="col-md-2 highlight">Last Name:</div>
       <div class="col-md-10">
         <input type="text" class="form-control" placeholder="enter last name" [(ngModel)]="this.student.lastName" />
       </div>
     </div>
     <div class="row spacing">
-      <div class="col-md-2 highlight">Gender</div>
+      <div class="col-md-2 highlight">Gender:</div>
       <div class="col-md-2">
         <select class="form-control" [(ngModel)]="this.student.gender">
           <option value="" selected="selected">-Select-</option>
@@ -34,27 +34,36 @@
       </div>
     </div>
     <div class="row spacing">
-      <div class="col-md-2 highlight">Email</div>
+      <div class="col-md-2 highlight">Email:</div>
       <div class="col-md-10">
         <input type="text" class="form-control" placeholder="enter email" [(ngModel)]="this.student.email" />
       </div>
     </div>
     <div class="row spacing">
-      <div class="col-md-2 highlight">Current Address</div>
+      <div class="col-md-2 highlight">Current Address:</div>
       <div class="col-md-10">
         <input type="text" class="form-control" placeholder="enter current address" [(ngModel)]="this.student.currentAddress" />
       </div>
     </div>
     <div class="row spacing">
-      <div class="col-md-2 highlight">Permanent Address</div>
+      <div class="col-md-2 highlight">Permanent Address:</div>
       <div class="col-md-10">
         <input type="text" class="form-control" placeholder="enter permanent address" [(ngModel)]="this.student.permanentAddress" />
       </div>
     </div>
     <div class="row spacing">
-      <div class="col-md-2 highlight">DOB</div>
+      <div class="col-md-2 highlight">DOB:</div>
       <div class="col-md-3">
         <input type="date" class="form-control" [(ngModel)]="this.student.dob" />
+      </div>
+    </div>
+    <div class="row spacing">
+      <div class="col-md-2 highlight">Class to be admiitted:</div>
+      <div class="col-md-1">
+        <select class="form-control">
+          <option value="0" selected="selected">-Select-</option>
+          <option *ngFor="let class of this.classes" value="class.id">{{class.name + '(' + class.sectionName + ')'}}</option>
+        </select>
       </div>
     </div>
     <div>
