@@ -23,7 +23,9 @@ export class TeacherDashboardComponent implements OnInit {
   }
 
   public RegisterTeacher(): void {
-    this.teacherService.TeacherRegister(this.teacher).subscribe(response => console.log(response), err => {
+    this.teacherService.TeacherRegister(this.teacher).subscribe(response => {
+      console.log(response);
+    }, err => {
       console.log('teacher registration error');
       console.log(err);
     }, () => console.log('teacher registeration done successfully.'));
