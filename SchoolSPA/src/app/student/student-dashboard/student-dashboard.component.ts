@@ -29,6 +29,10 @@ export class StudentDashboardComponent implements OnInit {
     }, () => console.log('classes download completed.'));
   }
 
+  public OnCancel() {
+    this.router.navigateByUrl("dashboard");
+  }
+
   public RegisterStudent() {
     this.student.dob = '11/11/1988';
     this.student.createdDate = '01/22/2022';

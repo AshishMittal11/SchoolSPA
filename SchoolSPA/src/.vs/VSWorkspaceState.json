@@ -3,8 +3,10 @@
     "",
     "\\app",
     "\\app\\models",
-    "\\app\\services"
+    "\\app\\services",
+    "\\app\\student",
+    "\\app\\student\\student-dashboard"
   ],
-  "SelectedNode": "\\app\\services\\class-service.ts",
+  "SelectedNode": "\\app\\models\\student.ts",
   "PreviewInSolutionExplorer": false
 }

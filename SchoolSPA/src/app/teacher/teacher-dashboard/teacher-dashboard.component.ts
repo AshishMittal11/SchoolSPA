@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Teacher } from '../../models/teacher';
 import { TeacherService } from '../../services/teacher-service';
 
@@ -11,10 +12,14 @@ export class TeacherDashboardComponent implements OnInit {
 
   public teacher: Teacher = new Teacher();
 
-  constructor(private teacherService : TeacherService) { }
+  constructor(private teacherService : TeacherService, private router : Router) { }
 
   ngOnInit(): void {
     
+  }
+
+  public OnCancel(): void {
+    this.router.navigateByUrl("dashboard");
   }
 
   public RegisterTeacher(): void {
