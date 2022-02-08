@@ -2,11 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\app",
-    "\\app\\models",
-    "\\app\\services",
-    "\\app\\student",
-    "\\app\\student\\student-dashboard"
+    "\\app\\teacher",
+    "\\app\\teacher\\teacher-dashboard"
   ],
-  "SelectedNode": "\\app\\models\\student.ts",
   "PreviewInSolutionExplorer": false
 }

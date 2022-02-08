@@ -12,16 +12,12 @@ export class StudentService {
   public RegisterStudent(student: Student): Observable<boolean> {
     let payload = JSON.stringify(student);
     let url = environment.schoolPath.student + '/api/student/register';
-    return this.httpClient.post<boolean>(url, payload, {
-      headers: { 'Content-Type': 'application/json' }
-    });
+    return this.httpClient.post<boolean>(url, payload);
   }
 
   public ListStudents(): Observable<Student[]> {
     // let url = "https://localhost:5000/api/Student/view";
     let url = environment.schoolPath.student + '/api/student/view';
-    return this.httpClient.get<Student[]>(url, {
-      headers: { 'Content-Type': 'application/json' }
-    });
+    return this.httpClient.get<Student[]>(url);
   }
 }

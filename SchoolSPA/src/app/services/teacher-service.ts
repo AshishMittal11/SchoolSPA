@@ -12,15 +12,11 @@ export class TeacherService {
   public TeacherRegister(teacher: Teacher): Observable<boolean> {
     let url = environment.schoolPath.teacher + '/api/teacher/register';
     let payload = JSON.stringify(teacher);
-    return this.httpClient.post<boolean>(url, payload, {
-      headers: { 'Content-Type': 'application/json' }
-    });
+    return this.httpClient.post<boolean>(url, payload);
   }
 
   public ViewTeachers(): Observable<Teacher[]> {
     let url = environment.schoolPath.teacher + '/api/teacher/view';
-    return this.httpClient.get<Teacher[]>(url, {
-      headers: { 'Content-Type': 'application/json' }
-    });
+    return this.httpClient.get<Teacher[]>(url);
   }
 }

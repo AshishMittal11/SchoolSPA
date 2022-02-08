@@ -10,8 +10,6 @@ export class ClassService {
 
   public ViewClasses(): Observable<ClassRoom[]> {
     let url = environment.schoolPath.class + '/api/class/viewbysections';
-    return this.httpClient.get<ClassRoom[]>(url, {
-      headers: { 'Content-Type': 'application/json' }
-    });
+    return this.httpClient.get<ClassRoom[]>(url);
   }
 }
